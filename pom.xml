@@ -12,11 +12,16 @@
 	<artifactId>mcs-empleados</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mcs-empleados</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Practice project with Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+                <dependency>
+                    <groupId>com.github.javafaker</groupId>
+                    <artifactId>javafaker</artifactId>
+                    <version>1.0.2</version>
+                </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
