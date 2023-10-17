@@ -1,1 +1,5 @@
+com/nanonexpy/mcsempleados/controllers/DataGeneratorControllerTest.class
 com/nanonexpy/mcsempleados/McsEmpleadosApplicationTests.class
+com/nanonexpy/mcsempleados/services/DataGeneratorServiceTest.class
+com/nanonexpy/mcsempleados/controllers/EmployeeControllerTest.class
+com/nanonexpy/mcsempleados/services/EmployeeServiceTest.class
