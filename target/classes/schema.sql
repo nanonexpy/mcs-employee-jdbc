@@ -4,7 +4,7 @@
  */
 
 CREATE TABLE employees (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY,
     first_name VARCHAR(255),
     last_name VARCHAR(255),
     document_number VARCHAR(20),

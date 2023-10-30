@@ -9,6 +9,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 
 /**
  *
@@ -29,14 +31,15 @@ public class DataGeneratorControllerTest {
         //Datos ficticios que espero de la respuesta
         int numRecords = 10;
         String respuesta = "Datos generados y guardados en la base de datos.";
-        
+
         //Configuro el comportamiento del mock
         Mockito.doNothing().when(service).generateAndInsertData(numRecords);
         
         //Llamo al método que quiero probar
-        String respuestaEsperada = controller.generarDatos();
+        ResponseEntity<String> respuestaEsperada = controller.generarDatos();
         
         //Verifico que la lista de empleados coincida con la lista esperada
-        Assertions.assertEquals(respuestaEsperada, respuesta);
+        Assertions.assertEquals(HttpStatus.OK, respuestaEsperada.getStatusCode());
+        Assertions.assertEquals(respuesta, respuestaEsperada.getBody());
     }
 }
