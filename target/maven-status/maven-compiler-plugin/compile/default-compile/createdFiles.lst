@@ -1,4 +1,5 @@
 com/nanonexpy/mcsempleados/models/rowMapper/EmployeeRowMapper.class
+com/nanonexpy/mcsempleados/config/SwaggerConfig.class
 com/nanonexpy/mcsempleados/McsEmpleadosApplication.class
 com/nanonexpy/mcsempleados/controllers/EmployeeController.class
 com/nanonexpy/mcsempleados/services/DataGeneratorService.class
